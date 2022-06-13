@@ -248,15 +248,38 @@ button.header {
     width: 100px;
     height: 260px;
     grid-column: end;
-    background: white;
     border-radius: 10px;
     flex:1;
     margin-left: 8px;
-
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
 }
 
+.innercard>h1 {
+    font-size: 15px;
+    padding-left: 10px;
+    margin: 10px;
+}
 
+.card_git {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
+.card_image {
+    width: 220px;
+    height:160px;
+    justify-self: center;
+    align-self: center;
+}
+
+.innercard>p {
+    font-size: 12px;
+    text-align: center;
+}
 
 .rightbar {
     background: aqua;
