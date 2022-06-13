@@ -3,6 +3,24 @@
     margin:0;
     padding:0;
     font-family:'Roboto', sans-serif;
+
+    --grey: rgb(45, 46, 52);
+    --cornsilk: rgb(251, 247, 218);
+
+}
+
+.light {
+    --font-color: var(--grey);
+    --bg: var(--cornsilk);
+}
+
+.dark {
+    --font-color: var(--cornsilk);
+    --bg: var(--grey);
+}
+
+.body {
+
 }
 
 ul {
@@ -21,10 +39,15 @@ a {
     grid-template-columns: 180px 1fr;
 }
 
+svg path{
+    fill: var(--font-color);
+  }
+
 /************** Left ******************/
 
 .left {
-    background-color: red;
+    background-color: var(--bg);
+    color: var(--font-color);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px 1fr;
