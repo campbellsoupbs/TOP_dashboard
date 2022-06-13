@@ -1,6 +1,6 @@
 :root {
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
     padding:0;
     font-family:'Roboto', sans-serif;
 }
@@ -21,19 +21,14 @@ a {
     grid-template-columns: 180px 1fr;
 }
 
+/************** Left ******************/
+
 .left {
     background-color: red;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px 1fr;
 }
-
-.right {
-    background-color: blue;
-}
-
-
-/* Left */
 
 .logo {
     display: grid;
@@ -80,4 +75,47 @@ a {
 }
 .privacy {
     grid-row: 10;
+}
+
+/************** Right ******************/
+
+.right {
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 125px 1fr 30px;
+}
+
+.header {
+    background-color: green;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header_top {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px 50px 50px;
+    align-items: center;
+}
+
+.search_icon {
+    justify-self: end;
+}
+
+.search_bar {
+    margin: 20px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+
+
+
+
+.content {
+    background-color: gold;
+}
+
+.footer {
+    background-color: grey;
 }
