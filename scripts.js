@@ -1,18 +1,18 @@
 const light = document.querySelector(".light_btn");
 const dark = document.querySelector(".dark_btn");
 
-const left = document.querySelector(".left");
+const body = document.querySelector("body");
 
 light.addEventListener("click", toggleLight);
 dark.addEventListener("click", toggleDark);
 
 
 function toggleLight() {
-    left.classList.replace('dark', 'light');
+    body.classList.replace('dark', 'light');
     console.log("Light!");
 }
 
 function toggleDark() {
-    left.classList.replace('light', 'dark');
+    body.classList.replace('light', 'dark');
     console.log("Dark!");
 }
