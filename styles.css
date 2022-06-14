@@ -241,6 +241,7 @@ button.header {
     color: var(--font-color);
     padding-left: 30px;
     padding-top: 20px;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
 .project_container {
